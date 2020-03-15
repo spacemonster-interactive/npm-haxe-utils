@@ -1,0 +1,22 @@
+{
+  "name": "haxe-utils",
+  "version": "0.0.0",
+  "description": "a collection of build scripts for use with npm-haxe",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spacemonster-interactive/npm-haxe-utils.git"
+  },
+  "keywords": [
+    "haxe"
+  ],
+  "author": "spacemonster",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/spacemonster-interactive/npm-haxe-utils/issues"
+  },
+  "homepage": "https://github.com/spacemonster-interactive/npm-haxe-utils#readme"
+}
