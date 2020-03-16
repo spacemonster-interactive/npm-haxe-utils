@@ -29,13 +29,6 @@ info(() => {
 
 function clean(callback) {
   var limeProcess = lime("clean", profileXml, "electron");
-  limeProcess.stdout.on('data', (data) => {
-    loglines(data.toString('utf8'), false);
-  });
-  limeProcess.stderr.on('data', (data) => {
-    loglines(data.toString('utf8'), true);
-    
-  });
   limeProcess.on('close', function (code) {
     console.log('->',chalk.green('Clear Successfully'));
     if (callback !== undefined)

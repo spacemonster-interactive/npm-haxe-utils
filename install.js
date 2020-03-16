@@ -5,12 +5,7 @@ var limeCheckInstall = require('./lib/lime-check-install');
 var limeSetup = require('./lib/lime-setup');
 
 haxelibInstall().then(() => {
-  limeCheckInstall().then(() => {
-    console.log(chalk.greenBright('Lime already installed'));
-  }).catch(() => {
-    console.log(chalk.redBright('Lime not detected'));
-    limeSetup().then(() => {
-      console.log(chalk.greenBright("Lime setup complete"));
-    });
+  limeSetup().then(() => {
+    console.log(chalk.greenBright("Lime setup complete"));
   });
 });
