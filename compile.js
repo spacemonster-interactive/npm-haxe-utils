@@ -22,9 +22,9 @@ if (process.env.HAXE_DEFINES !== undefined){
 }
 
 info(() => {
-  clean(() => {
+  //clean(() => {
     buildLime();
-  });
+  //});
 });
 
 function clean(callback) {
