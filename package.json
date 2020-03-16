@@ -16,11 +16,11 @@
     "gitCommittish": null
   },
   "_requiredBy": [
-    "#DEV:/"
+    "/"
   ],
-  "_resolved": "github:spacemonster-interactive/npm-haxe-utils#3041ab67bc208ffb649e6363c3d6c03a9248fafe",
+  "_resolved": "github:spacemonster-interactive/npm-haxe-utils#4da8ec8484681b955d84af46160f863a307e10b0",
   "_spec": "haxe-utils@github:spacemonster-interactive/npm-haxe-utils",
-  "_where": "/Users/peteshand/Projects/2020/science/tcp-test-app/node-tac-test-app",
+  "_where": "/Users/peteshand/Projects/2020/acmi/flipbook/acmi-eed-flipbook",
   "author": {
     "name": "spacemonster"
   },
@@ -44,5 +44,5 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "version": "0.0.0"
+  "version": "0.0.1"
 }
