@@ -7,12 +7,20 @@ var loglines = require('./lib/loglines');
 var info = require('./lib/info');
 var profileXml = 'project.xml';
 var buildType = '-release';
+var platform = null;
+var cleanBeforeBuild = false;
 
 if (process.env.PROJECT_XML !== undefined){
   profileXml = process.env.PROJECT_XML;
 }
 if (process.env.BUILD_TYPE !== undefined){
   buildType = process.env.BUILD_TYPE;
+}
+if (process.env.PLATFORM !== undefined){
+  platform = process.env.PLATFORM;
+}
+if (process.env.CLEAN_BEFORE_BUILD !== undefined){
+  cleanBeforeBuild = process.env.CLEAN_BEFORE_BUILD === 'true';
 }
 var defines = [];
 if (process.env.HAXE_DEFINES !== undefined){
@@ -22,13 +30,17 @@ if (process.env.HAXE_DEFINES !== undefined){
 }
 
 info(() => {
-  //clean(() => {
+  if (cleanBeforeBuild){
+    clean(() => {
+      buildLime();
+    });
+  } else {
     buildLime();
-  //});
+  }
 });
 
 function clean(callback) {
-  var limeProcess = lime("clean", profileXml, "electron");
+  var limeProcess = lime("clean", profileXml, platform);
   limeProcess.on('close', function (code) {
     console.log('->',chalk.green('Clear Successfully'));
     if (callback !== undefined)
@@ -42,7 +54,7 @@ function clean(callback) {
 }
 
 function buildLime(callback) {
-  var args = ["build", profileXml, "electron", buildType];
+  var args = ["build", profileXml, platform, buildType];
   for (var i = 0; i < defines.length; i++){
     args.push("-D");
     args.push(defines[i]);
