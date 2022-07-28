@@ -1,26 +1,38 @@
 {
-  "_from": "github:spacemonster-interactive/npm-haxe-utils",
-  "_id": "haxe-utils@0.0.0",
+  "_args": [
+    [
+      "haxe-utils@0.1.0",
+      "/Users/peteshand/Projects/2020/spacemonster/login"
+    ]
+  ],
+  "_from": "haxe-utils@0.1.4",
+  "_id": "haxe-utils@0.1.4",
   "_inBundle": false,
-  "_integrity": "",
+  "_integrity": "sha512-3aeU84znY5toad1SkLyY2/FhbBZDzrEuc6HuGwP1FaIU5wiHdTtKmevnMfuIYvzW9cVWCeuKRtTMoQ0U0Z1yCg==",
   "_location": "/haxe-utils",
-  "_phantomChildren": {},
+  "_phantomChildren": {
+    "ansi-styles": "4.3.0",
+    "at-least-node": "1.0.0",
+    "graceful-fs": "4.2.10",
+    "supports-color": "7.2.0"
+  },
   "_requested": {
-    "type": "git",
-    "raw": "haxe-utils@github:spacemonster-interactive/npm-haxe-utils",
+    "type": "version",
+    "registry": true,
+    "raw": "haxe-utils@0.1.4",
     "name": "haxe-utils",
     "escapedName": "haxe-utils",
-    "rawSpec": "github:spacemonster-interactive/npm-haxe-utils",
-    "saveSpec": "github:spacemonster-interactive/npm-haxe-utils",
-    "fetchSpec": null,
-    "gitCommittish": null
+    "rawSpec": "0.1.4",
+    "saveSpec": null,
+    "fetchSpec": "0.1.4"
   },
   "_requiredBy": [
-    "/"
+    "#DEV:/"
   ],
-  "_resolved": "github:spacemonster-interactive/npm-haxe-utils#4da8ec8484681b955d84af46160f863a307e10b0",
-  "_spec": "haxe-utils@github:spacemonster-interactive/npm-haxe-utils",
-  "_where": "/Users/peteshand/Projects/2020/acmi/flipbook/acmi-eed-flipbook",
+  "_resolved": "https://registry.npmjs.org/haxe-utils/-/haxe-utils-0.1.4.tgz",
+  "_shasum": "47f8ae941cfdc7448f5e13157d87f78210e707ae",
+  "_spec": "haxe-utils@0.1.4",
+  "_where": "I:\\_projects\\tmca-webgl-hydrogen-centre\\webgl",
   "author": {
     "name": "spacemonster"
   },
@@ -28,6 +40,10 @@
     "url": "https://github.com/spacemonster-interactive/npm-haxe-utils/issues"
   },
   "bundleDependencies": false,
+  "dependencies": {
+    "chalk": "4.0.0",
+    "fs-extra": "9.0.1"
+  },
   "deprecated": false,
   "description": "a collection of build scripts for use with npm-haxe",
   "homepage": "https://github.com/spacemonster-interactive/npm-haxe-utils#readme",
@@ -44,8 +60,5 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "dependencies": {
-    "chalk": "2.4.2"
-  },
-  "version": "0.0.2"
+  "version": "0.1.4"
 }
